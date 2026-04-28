@@ -3,50 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Investment Guru - Smart Investing</title>
+    <title>Investment Guru - Premium</title>
     <style>
+        @keyframes gradientRun {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
         body {
-            background-color: #0b0d17;
+            background-color: #05070a;
             color: white;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', sans-serif;
             text-align: center;
             margin: 0;
             padding: 20px;
         }
-        /* 1. Logo link style */
-        .logo-link {
-            display: inline-block;
-            margin-top: 20px;
-        }
-        .logo {
-            width: 120px;
-            border-radius: 50%;
-            border: 2px solid #ffd700;
-            transition: transform 0.3s;
-        }
-        .logo:hover { transform: scale(1.1); }
 
-        .main-title {
+        .brand-name {
             color: #ffd700;
-            font-size: 26px;
-            letter-spacing: 2px;
-            margin-bottom: 5px;
-        }
-        
-        /* 2. Main Button style */
-        .btn-main {
-            display: block;
-            background: linear-gradient(to right, #ffd700, #b8860b);
-            border: none;
-            padding: 15px;
-            border-radius: 25px;
-            color: black;
+            font-size: 28px;
             font-weight: bold;
+            margin-top: 20px;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+
+        .tagline {
+            color: #00ff88;
+            font-size: 16px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .logo {
+            width: 130px;
+            border-radius: 50%;
+            border: 3px solid #ffd700;
+            box-shadow: 0 0 30px rgba(0, 255, 136, 0.4);
+            margin-bottom: 20px;
+        }
+
+        /* Moving Color Button Template */
+        .btn-animate {
+            display: block;
             width: 85%;
             max-width: 350px;
             margin: 15px auto;
-            text-decoration: none; /* Link underline hatane ke liye */
+            padding: 18px;
             font-size: 18px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradientRun 5s ease infinite; /* Color running effect */
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            border: none;
+            text-transform: uppercase;
+        }
+
+        /* Outline Moving Border Button */
+        .btn-outline {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 10px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #ffd700;
+            border: 2px solid;
+            border-image: linear-gradient(to right, #ffd700, #00ff88) 1;
+            background: transparent;
         }
 
         .grid-container {
@@ -56,52 +85,51 @@
             margin: 25px auto;
             max-width: 400px;
         }
+
         .grid-item {
-            background: rgba(255, 255, 255, 0.08);
-            border: 1px solid #444;
-            padding: 20px;
-            border-radius: 12px;
-            font-size: 14px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            padding: 15px;
+            border-radius: 15px;
+            font-size: 13px;
         }
 
-        /* 3. Floating Telegram Button */
-        .floating-tg {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #0088cc;
-            color: white;
-            padding: 12px 20px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
-            z-index: 100;
+        .description {
+            padding: 25px;
+            color: #bdc3c7;
+            font-size: 14px;
+            line-height: 1.6;
         }
     </style>
 </head>
 <body>
 
-    <a href="https://t.me/+lmb7xj54XB43ZjM1" class="logo-link">
-        <img src="https://via.placeholder.com/150" alt="Logo" class="logo">
+    <a href="https://t.me/+lmb7xj54XB43ZjM1">
+        <img src="https://via.placeholder.com/150" alt="Investment Guru Logo" class="logo">
     </a>
 
-    <h1 class="main-title">INVESTMENT GURU™</h1>
-    <p style="opacity: 0.8;">Safe & Secure Investment Plans</p>
+    <div class="brand-name">INVESTMENT GURU™</div>
+    <div class="tagline">Trade smarter. Win faster.</div>
 
-    <a href="https://t.me/+lmb7xj54XB43ZjM1" class="btn-main">
-        🚀 JOIN TELEGRAM NOW
+    <a href="https://t.me/+lmb7xj54XB43ZjM1" class="btn-outline">Signals & Plans</a>
+
+    <a href="https://t.me/+lmb7xj54XB43ZjM1" class="btn-animate">
+        🚀 Join Us On Telegram
     </a>
 
     <div class="grid-container">
-        <div class="grid-item">💰 High Returns</div>
-        <div class="grid-item">🔒 100% Safe</div>
-        <div class="grid-item">📲 Daily Updates</div>
-        <div class="grid-item">🎁 Special Offers</div>
+        <div class="grid-item">⚡ <b>3 Min Withdrawal</b></div>
+        <div class="grid-item">📈 <b>Daily Signals</b></div>
+        <div class="grid-item">🔄 <b>Loss Recovery</b></div>
+        <div class="grid-item">✅ <b>Official Channel</b></div>
     </div>
 
-    <a href="https://t.me/+lmb7xj54XB43ZjM1" class="floating-tg">
-        Join Channel ✈️
+    <div class="description">
+        <b>INVESTMENT GURU™</b> delivers high-accuracy investment strategies with speed, discipline, and precision built for serious players.
+    </div>
+
+    <a href="https://t.me/+lmb7xj54XB43ZjM1" class="btn-animate">
+        💰 Start Earning Now
     </a>
 
 </body>
